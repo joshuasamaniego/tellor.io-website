@@ -1,0 +1,123 @@
+@import '../../../style/index.scss';
+
+.MessageBox {
+    width: 100%;
+    margin: 4% 0;
+    .messagebox-container {
+        padding: 4%;
+    }
+    .container-new {
+        border: 1px solid #5865F2;
+    } 
+    .container-active {
+        border: 1px solid #FFCC81;
+    } 
+    .messagebox-header {
+        color: white;
+        margin-bottom: 1%;
+    }
+    .messagebox-text {
+        height: 5px;
+    }
+    .main-description {
+        max-width: 900px;
+    }
+    .bold {
+       font-weight: 500;
+    }
+    .messagebox-actions {
+        padding: 5% 0 0 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    .messagebox-buttons {
+        button {
+            min-width: 280px;
+            background-color: $background;
+            font-size: 1rem;
+            color: white;
+            border: 1px solid white;
+            border-bottom: 2px solid white;
+            border-radius: 0;
+            margin-right: 50px;
+            cursor: pointer;
+            height: 74px;
+            box-sizing: border-box;
+        }
+    }
+    .close-msg {
+        align-self: flex-end;
+        font-weight: bold;
+        &:hover {
+            color: $real-tellor-green;
+        }
+        @media (max-width: 810px) {
+            margin-top: 30px;
+            align-self: center;
+        }
+    }
+    
+    .showinfo-container {
+        padding: 2% 0 0 0;
+        ul {
+            @include sixteenpxfont;
+            font-weight: 200;
+            color: white;
+        }
+        li {
+            padding-top: 3%;
+        }
+        a {
+            padding-left: 1%
+        }
+    }
+    .toggle-bounties {
+        padding-top: 4%;
+    }
+    @media (max-width: 810px) {
+        .showinfo-container {
+            padding: 20% 0;
+        }
+        .toggle-bounties {
+            padding-top: 2%;
+        }
+        .messagebox-header {
+            padding-top:15px;
+            padding-left:15px;
+            //@include centeredcolumn;
+        }
+        .messagebox-text {
+            padding: 30px 15px 0 15px;
+            min-height: 40px;
+            @include centeredcolumn;
+        }
+        .main-description {
+            margin-top:10px;
+        }
+        .messagebox-actions {  
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            // padding-top: 20px;
+            padding: 20px 15px;
+        }
+        .messagebox-buttons {  
+            @include centeredcolumn;
+            //align-self: center;
+            button {
+                align-self: flex-end;
+                margin-top: 10px;
+                height: 60px;
+                min-width: 250px;
+            }
+        }   
+    }
+    @media (max-width: 400px) { 
+        .messagebox-buttons {  
+            align-self: flex-start;
+        }   
+    }
+} 

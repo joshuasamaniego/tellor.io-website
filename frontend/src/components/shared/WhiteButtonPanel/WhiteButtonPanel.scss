@@ -1,0 +1,49 @@
+  @import '../../../style/index.scss';
+
+ .WhiteButtonPanel {
+    @include centeredcolumn;
+    background-color: white;
+    padding: 8% 0 10% 0;
+    width: 100%;
+    //min-width: 945px;
+    .button-container {
+        @include centeredrow;
+  
+    }
+    &__actions {
+        padding-top: 4%;
+        img {
+            width: 20px;
+            margin-right: 15px;
+        }
+        
+    }
+ }
+
+ @media (max-width: 840px) {
+    .WhiteButtonPanel {
+        padding: 70px 50px 90px 50px;
+        width: 100%;
+        h2 {
+            text-align: center;
+            font-size: 1.25rem;
+            line-height: 1.375rem;
+        }
+        &__actions {
+            padding-top: 4%;
+            img {
+                width: 20px;
+                margin-right: 15px;
+            }
+            button {
+                margin-top: 10px;
+            }
+        }
+        .button-container {
+            @include centeredcolumn;
+            width: 100%;
+
+        }
+    }
+ }
+ 

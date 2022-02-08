@@ -1,0 +1,17 @@
+@import '../../../style/index.scss';
+
+.TokenIntro {
+  @include leftcolumn;
+  @include sidepaddings;
+
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 0;
+  @media (max-width: 840px) {
+    padding-top: 30px;
+  }
+  &__desc {
+    padding-top: 30px;
+  }
+
+}

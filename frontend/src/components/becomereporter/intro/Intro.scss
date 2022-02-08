@@ -1,0 +1,18 @@
+@import '../../../style/index.scss';
+
+
+.Intro {
+    @include leftcolumn;
+    @include sidepaddings;
+    width: 100%;
+    padding-top: 60px;
+    @media (max-width: 840px) {
+        padding-top: 30px;
+    }
+    h1 {
+        max-width: 650px;
+    }
+    &__desc {
+        padding-top: 30px;
+    }
+}

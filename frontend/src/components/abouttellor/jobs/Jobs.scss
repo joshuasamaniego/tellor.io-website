@@ -1,0 +1,60 @@
+@import "../../../style/index.scss";
+
+#jobs {
+  scroll-margin-top: 200px;
+  @media (max-width: 840px) {
+    scroll-margin-top: 80px;
+  }
+}
+
+.Jobs {
+  @include leftcolumn;
+  width: 100%;
+  padding: 3% 12% 5% 12%;
+  background-color: white;
+  &__intro {
+    p {
+      margin-bottom: 0;
+    }
+  }
+  .Job {
+    border-left: 1px solid #262626;
+    padding-left: 40px;
+    margin: 50px 0px;
+    width: 90%;
+    h3 {
+      font-size: 1.25rem !important;
+      line-height: 1.75rem !important;
+      margin-bottom: 0px;
+    }
+    h5 {
+      margin-top: 20px;
+      font-size: 1.125rem !important;
+      line-height: 1.75rem !important;
+      font-weight: 200;
+    }
+    p {
+      margin-bottom: 0;
+      padding-top: 15px;
+      font-size: 1.125rem !important;
+      line-height: 1.75rem !important;
+      font-weight: 200;
+      color: #262626;
+    }
+    a {
+      color: #262626;
+      font-size: 1.125rem !important;
+      line-height: 1.75rem !important;
+      font-weight: 200;
+    }
+    li {
+      font-size: 1.125rem !important;
+      line-height: 1.75rem !important;
+      font-weight: 200;
+    }
+    @media (max-width: 840px) {
+      font-size: 0.875rem !important;
+      line-height: 1.375rem !important;
+    }
+  }
+}

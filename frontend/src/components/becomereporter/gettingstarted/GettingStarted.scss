@@ -1,0 +1,49 @@
+@import '../../../style/index.scss';
+
+
+.GettingStarted {
+    @include leftcolumn;
+    @include sidepaddings;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 80px;
+
+    @media (max-width: 840px) {
+        padding-top: 30px;
+    }
+    &__intro {
+        p {
+            padding: 10px 0 0 0;
+        }
+    }
+    
+    &__video {
+        padding: 3.5% 0;
+        video {
+            box-shadow: 0 0 15px 2px #111;
+            width: 560px; 
+            height: 315px;
+            cursor:pointer;
+        }
+        @media (max-width: 840px) {
+            video {
+                width: 275px; 
+                height: 157.5px;
+            }
+        }
+    }
+    &__actions {
+        img {
+            padding: 0 15px 0 0;
+        }
+        @media (max-width: 840px) {
+            @include centeredcolumn;
+            width: 100%;
+
+            button {
+                width: 100%;
+                margin: 35px 0;
+            }
+        }
+    }
+}

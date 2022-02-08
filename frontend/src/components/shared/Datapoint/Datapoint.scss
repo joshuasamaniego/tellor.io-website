@@ -1,0 +1,68 @@
+@import '../../../style/index.scss';
+
+
+.Datapoint {
+    @include leftrow;
+    width: 100%;
+    margin: 0 0 20px 0;
+    &__left {
+        width: 52%;
+        color: white;
+        p {
+            margin: 0 0 7px 0;
+            @media (max-width: 840px) {
+                font-size: 0.625rem !important;
+                line-height: 0.675rem !important;
+            }
+        }
+        a {
+            margin: 0 0 7px 0;
+            @media (max-width: 840px) {
+                font-size: 0.625rem !important;
+                line-height: 0.675rem !important;
+            }
+        }
+        a:hover, a:focus, a:active {
+            font-size: 0.875rem !important;
+            line-height: 1.25rem !important;
+            font-weight: 600;
+        }
+        
+        h4 {
+            color: white;
+            font-family: 'Renogare Regular';
+            margin: 0;
+            font-size: 1.25rem;
+            line-height: 1.4375rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            @media (max-width: 840px) {
+                font-size: 0.875rem !important;
+                line-height: 0.875rem !important;
+            }
+
+        }
+    }
+    &__right {
+        width: 48%;
+        h2 {
+            font-family: 'Renogare Regular';
+            color: white;
+            text-align: right;
+            margin: 0;
+            font-size: 2.75rem;
+            line-height: 3.25rem;
+            word-break: break-all;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            @media (max-width: 840px) {
+                font-size: 2.125rem;
+                line-height: 2.5rem;
+            }
+        }
+    }
+}

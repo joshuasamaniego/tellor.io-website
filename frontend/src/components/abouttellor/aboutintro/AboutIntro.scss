@@ -1,0 +1,26 @@
+@import '../../../style/index.scss';
+
+.AboutIntro {
+    width: 100%;
+    &__header {
+        @include sidepaddings;
+        width: 100%;
+        padding-top: 60px;
+        @media (max-width: 840px) {
+          padding-top: 30px;
+        }
+    }
+    &__founders {
+        @include leftcolumn;
+        @include sidepaddings;
+        width: 100%;
+        padding-top: 60px;
+        padding-bottom: 70px;
+        @media (max-width: 840px) {
+          padding-top: 30px;
+        }
+        a {
+            padding: 0 0 5px 0;
+        }
+    }
+}

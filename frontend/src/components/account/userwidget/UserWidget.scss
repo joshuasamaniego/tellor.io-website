@@ -1,0 +1,56 @@
+@import '../../../style/index.scss';
+
+.UserWidget {
+    width: 100%;
+    padding: 2% 0 6% 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    &__left {
+        @include leftrow;
+        img {
+            width: 42px;
+        }
+        &__address {
+            @include leftcolumn;
+            margin-left: 30px;
+            p {
+                height: 8px;   
+            }
+        }
+    }
+    .address { 
+        font-weight: bold;
+    }
+    &__right {
+        p {
+            color: white;
+            font-size: 2.125rem !important;
+            line-height: 1.75rem !important;
+            font-weight: bold;
+            height: 6px;   
+        }
+    }
+    @media (max-width: 810px) {
+        padding: 8% 4%;
+        &__left {
+            img {
+                width: 35px;
+            }
+            &__address {
+                margin-left: 10px;
+                p {
+                    height: 4px;   
+                    font-size: 12px !important;
+                }
+            }
+        }
+        &__right {
+            p {
+                width: 50px; 
+                font-size: 1.25rem !important;
+            }
+        }
+     }
+}
